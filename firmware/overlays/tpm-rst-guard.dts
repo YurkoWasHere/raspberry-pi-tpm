@@ -1,0 +1,35 @@
+/*
+ * Keep runtime software away from the TPM's reset line (RST#, GPIO 4 on this board).
+ * Anything that can pulse GPIO 4 low can reset the TPM and replay "good" measurements.
+ *  - fragment@0: the kernel claims GPIO 4 as a hog, driven high, so /dev/gpiochip* requests for it
+ *    (gpioset, libgpiod, sysfs) fail with EBUSY, root included.
+ *  - fragment@1: no /dev/gpiomem, the unprivileged register window pinctrl and GPIO libraries use
+ *    (open to the gpio group without sudo).
+ * Not covered: root via /dev/mem (needs STRICT_DEVMEM/IO_STRICT_DEVMEM or lockdown), physical access.
+ * The firmware pulses GPIO 4 before Linux starts, so this does not affect the boot-time TPM reset.
+ */
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target = <&gpio>;
+		__overlay__ {
+			tpm-rst-hog {
+				gpio-hog;
+				gpios = <4 0>;
+				output-high;
+				line-name = "TPM_RST_N";
+			};
+		};
+	};
+
+	fragment@1 {
+		target-path = "/soc/gpiomem";
+		__overlay__ {
+			status = "disabled";
+		};
+	};
+};
