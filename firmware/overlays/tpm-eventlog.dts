@@ -1,0 +1,30 @@
+/*
+ * Hands the event log written by the patched bootcode.bin to Linux.
+ * Reserves the log memory and sets linux,sml-base/linux,sml-size on the TPM node, which the
+ * kernel's TPM driver reads (drivers/char/tpm/eventlog/of.c) to expose
+ * /sys/kernel/security/tpm0/binary_bios_measurements.
+ * Must be applied after tpm-slb9670. Address and sizes must match LOG_PHYS/LOG_AREA/DTBUF in tpm-measure.s.
+ */
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target-path = "/reserved-memory";
+		__overlay__ {
+			tpm-event-log@f000000 {
+				reg = <0x0f000000 0x30000>;	/* log 32K, stage-2 code 32K, final-DT scratch 64K */
+			};
+		};
+	};
+
+	fragment@1 {
+		target-path = "/soc/spi@7e204000/slb9670@1";
+		__overlay__ {
+			linux,sml-base = <0x0 0x0f000000>;
+			linux,sml-size = <0x8000>;	/* the log area only */
+		};
+	};
+};

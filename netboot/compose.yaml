@@ -1,0 +1,10 @@
+services:
+  netboot:
+    build: .
+    network_mode: host      # DHCP/TFTP/NFS must sit directly on the Pi-facing NIC
+    privileged: true        # loads and drives the host kernel's nfsd
+    env_file: .env
+    volumes:
+      - ../srv:/srv
+      - /lib/modules:/lib/modules:ro
+    restart: "no"
