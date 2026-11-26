@@ -1,0 +1,29 @@
+# Local state: OS image, netboot tree (rootfs is root-owned), host config, secrets
+images/
+srv/
+netboot/.env
+netboot/pi-password.txt
+netboot/known_hosts
+netboot/serial.log
+tests/results/
+
+# Build outputs. *.bootcode.bin contain Broadcom code: never commit or publish them
+firmware/*.o
+firmware/*.blob
+firmware/*.lst
+firmware/*.bootcode.bin
+firmware/overlays/*.dtbo
+dist/
+
+# Reverse-engineering workspace (Broadcom firmware and disassembly)
+re/
+
+# Tool build trees
+tools/vc4/build.log
+tools/uboot/src/
+tools/uboot/out/
+tools/uboot/build.log
+
+# Python
+__pycache__/
+*.pyc
