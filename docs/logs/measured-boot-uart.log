@@ -1,0 +1,114 @@
+Raspberry Pi Bootcode
+USB ethernet boot
+Sending DHCP request
+Waiting for dhcp_reply
+ARP request: my IP addr 10.42.0.124 my eth_addr b8:27:eb:xx:xx:xx ARP for addr 10.42.0.1
+Done ARP for 10.42.0.1 got xx:xx:xx:xx:xx:xx
+Read File: config.txt, 1386 (bytes)
+TPM: DID_VID=001b15d1 ACCESS=ffffff81 STS=ffffffff wait=00000001
+TPM: Startup rc=00000000
+TPM: config.txt -> PCR1, 1386 bytes
+TPM:   5943 us (hash 967 us)
+TPM:   PCR1 sha1   4b6ae9f5909d584ea58e8ae70cf6d62ea2af871a
+TPM:   PCR1 sha256 ca7bf4457060d86e279a1b34fb17b5f9bafa792458e11b4731da638cf4c10a22
+Raspberry Pi Bootcode
+Read File: config.txt, 1386
+Read File: start.elf, 3023104 (bytes)
+TPM: start.elf -> PCR0, 3023104 bytes
+TPM:   2071233 us (hash 2065999 us)
+TPM:   PCR0 sha1   2868bcd8157a09b49ed3ddc40447b1f7a617098c
+TPM:   PCR0 sha256 32f990801e7765bae6fe5cb940ba5eeff02dd0dac8dc5474db5b3fd345281790
+TPM: event log 232 bytes at 0f000000
+Read File: fixup.dat, 7381 (bytes)
+TPM: fixup.dat -> PCR0, 7381 bytes
+TPM:   10039 us (hash 5077 us)
+TPM:   PCR0 sha1   fb5759d5de0e66754b344637d0bf236cfa342801
+TPM:   PCR0 sha256 7853f2b51e4489f8b3ce6f9c52fd0afdda38c7383961524e0883d34afcb4827b
+TPM: event log 313 bytes at 0f000000
+TPM: start.elf hooks installed (load_file, final DT) -> 0f008a9a
+MESS:00:00:15.810947:0: brfs: File read: /mfs/sd/config.txt
+MESS:00:00:15.815760:0: board: boardrev a020d3 otp a020d3
+MESS:00:00:15.820061:0: brfs: File read: 1386 bytes
+MESS:00:00:15.861671:0: HDMI0:EDID error reading EDID block 0 attempt 0
+MESS:00:00:15.867838:0: HDMI0:EDID error reading EDID block 0 attempt 1
+MESS:00:00:15.874174:0: HDMI0:EDID error reading EDID block 0 attempt 2
+MESS:00:00:15.880511:0: HDMI0:EDID error reading EDID block 0 attempt 3
+MESS:00:00:15.886848:0: HDMI0:EDID error reading EDID block 0 attempt 4
+MESS:00:00:15.893185:0: HDMI0:EDID error reading EDID block 0 attempt 5
+MESS:00:00:15.899522:0: HDMI0:EDID error reading EDID block 0 attempt 6
+MESS:00:00:15.905858:0: HDMI0:EDID error reading EDID block 0 attempt 7
+MESS:00:00:15.912196:0: HDMI0:EDID error reading EDID block 0 attempt 8
+MESS:00:00:15.918532:0: HDMI0:EDID error reading EDID block 0 attempt 9
+MESS:00:00:15.924627:0: HDMI0:EDID giving up on reading EDID block 0
+MESS:00:00:15.930837:0: brfs: File read: /mfs/sd/config.txt
+MESS:00:00:16.473908:0: gpioman: gpioman_get_pin_num: pin DISPLAY_DSI_PORT not defined
+MESS:00:00:16.480935:0: gpioman: gpioman_get_pin_num: pin DISPLAY_DSI_PORT not defined
+MESS:00:00:16.489513:0: *** Restart logging
+MESS:00:00:16.492002:0: brfs: File read: 1386 bytes
+MESS:00:00:16.497326:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 0
+MESS:00:00:16.504705:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 1
+MESS:00:00:16.511563:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 2
+MESS:00:00:16.518420:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 3
+MESS:00:00:16.525278:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 4
+MESS:00:00:16.532136:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 5
+MESS:00:00:16.538993:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 6
+MESS:00:00:16.545851:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 7
+MESS:00:00:16.552709:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 8
+MESS:00:00:16.559566:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 9
+MESS:00:00:16.566182:0: hdmi: HDMI0:EDID giving up on reading EDID block 0
+MESS:00:00:16.572080:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 0
+MESS:00:00:16.579879:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 1
+MESS:00:00:16.586737:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 2
+MESS:00:00:16.593594:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 3
+MESS:00:00:16.600452:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 4
+MESS:00:00:16.607309:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 5
+MESS:00:00:16.614167:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 6
+MESS:00:00:16.621025:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 7
+MESS:00:00:16.627883:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 8
+MESS:00:00:16.634739:0: hdmi: HDMI0:EDID error reading EDID block 0 attempt 9
+MESS:00:00:16.641356:0: hdmi: HDMI0:EDID giving up on reading EDID block 0
+MESS:00:00:16.646978:0: hdmi: HDMI:hdmi_get_state is deprecated, use hdmi_get_display_state instead
+MESS:00:00:16.655712:0: HDMI0: hdmi_pixel_freq_limit: 162000000
+MESS:00:00:16.661578:0: vec: vec_middleware_power_on: vec_base: 0x7e806000 rev-id 0x00002708 @ vec: 0x7e806100 @ 0x00000420 enc: 0x7e806060 @ 0x00000220 cgmsae: 0x7e80605c @ 0x00000000
+MESS:00:00:16.688749:0: dtb_file 'bcm2710-rpi-3-b-plus.dtb'
+MESS:00:00:16.703572:0: brfs: File read: /mfs/sd/bcm2710-rpi-3-b-plus.dtb
+MESS:00:00:16.708668:0: Loaded 'bcm2710-rpi-3-b-plus.dtb' to 0x100 size 0x89b4
+MESS:00:00:16.738146:0: TPM: bcm2710-rpi-3-b-plus.dtb -> PCR5, 35252 bytes
+MESS:00:00:16.743408:0: TPM:   27771 us (hash 19170 us)
+MESS:00:00:16.748455:0: TPM:   PCR5 sha1   0e14a82230b1e2753030d6916b8c0be248c5238f
+MESS:00:00:16.755931:0: TPM:   PCR5 sha256 d41256bdc25b09dbba0bcdb27592560561d39752ebb09c64e82a449e3271807d
+MESS:00:00:16.811642:0: brfs: File read: 35252 bytes
+MESS:00:00:16.816081:0: brfs: File read: /mfs/sd/config.txt
+MESS:00:00:16.820340:0: dtparam: audio=on
+MESS:00:00:16.829225:0: brfs: File read: 1386 bytes
+MESS:00:00:16.834829:0: brfs: File read: /mfs/sd/overlays/overlay_map.dtb
+MESS:00:00:16.847883:0: brfs: File read: 6331 bytes
+MESS:00:00:16.852456:0: brfs: File read: /mfs/sd/overlays/vc4-kms-v3d.dtbo
+MESS:00:00:16.905919:0: Loaded overlay 'vc4-kms-v3d'
+MESS:00:00:16.909556:0: dtparam: spi=on
+MESS:00:00:17.024610:0: brfs: File read: 2760 bytes
+MESS:00:00:17.028858:0: brfs: File read: /mfs/sd/overlays/tpm-slb9670.dtbo
+MESS:00:00:17.043884:0: Loaded overlay 'tpm-slb9670'
+MESS:00:00:17.074219:0: brfs: File read: 779 bytes
+MESS:00:00:17.078280:0: brfs: File read: /mfs/sd/overlays/tpm-eventlog.dtbo
+MESS:00:00:17.084724:0: Loaded overlay 'tpm-eventlog'
+MESS:00:00:17.103715:0: brfs: File read: 397 bytes
+MESS:00:00:17.107637:0: brfs: File read: /mfs/sd/cmdline.txt
+MESS:00:00:17.112220:0: Read command line from file 'cmdline.txt':
+MESS:00:00:17.118089:0: 'console=serial0,115200 console=tty1 root=/dev/nfs nfsroot=10.42.0.1:/srv/rootfs,vers=3,tcp,nolock ip=dhcp rw rootwait'
+MESS:00:00:17.150369:0: gpioman: gpioman_get_pin_num: pin EMMC_ENABLE not defined
+MESS:00:00:17.413770:0: brfs: File read: 118 bytes
+MESS:00:00:19.945259:0: brfs: File read: /mfs/sd/kernel8.img
+MESS:00:00:19.949207:0: Loaded 'kernel8.img' to 0x200000 size 0x9b85c4
+MESS:00:00:23.715521:0: TPM: kernel8.img -> PCR4, 10192324 bytes
+MESS:00:00:23.719894:0: TPM:   3764422 us (hash 3756751 us)
+MESS:00:00:23.725285:0: TPM:   PCR4 sha1   d7a916ec859ad587bb20adf325b97d9145f7f012
+MESS:00:00:23.732759:0: TPM:   PCR4 sha256 c9f5af153236ec42eb012700e39ff43d02bc7c5f2ab71abad6da1f20880343e0
+MESS:00:00:25.353942:0: Device tree loaded to 0x2eff6f00 (size 0x9023)
+MESS:00:00:25.383220:0: TPM: final-device-tree -> PCR5, 36899 bytes
+MESS:00:00:25.387855:0: TPM:   26733 us (hash 18854 us)
+MESS:00:00:25.392901:0: TPM:   PCR5 sha1   f400544f0e33d407d5670ff1b5bc04c6298ff414
+MESS:00:00:25.400375:0: TPM:   PCR5 sha256 9408071e796c6ee15b4fce518752588ad107f4bfd095699baa27728907355088
+MESS:00:00:25.411136:0: uart: Set PL011 baud rate to 103448.300000 Hz
+MESS:00:00:25.417594:0: uart: Baud rate change done...
+MESS:00:00:25.421008:0: uart: Baud rate2bL2`~nbnlnnnnr2npn`nLl2bL2ln2Br2nnn|Lbrr|2nnb|BB2rBB22nbp~nlb2BrnLbnnB|rrbpb2B2nnL||LBpLbL||b|nb|`bnbn|~BB2nnl|Lblr22lr2B2nnLbpbrLbpn|bLbLLbpLbl2bL2br2llL|2Bnrl2bL2|n~npnLnn~n`2bL2LLrnnLnnnlrBB2Llnn`2NrlLbrl2bL2L2nLbnN~||L`2bL2lrLnnn|Bp`r2Lnnn|nnnLLLb|bBLlB`2bL2l|rLnnLNnb2nBnNnnbpr2Bp~n2bBnLN|`2Bbr2Bnnnl2BL2l|rLnnLLbbBbbbB2bLn|2Bnnnbpr2`2bL2l|rLnnbbbpbbB2bLnNnnnr2BnnnnrnnL`2bL2llBrnnLnnLnrrLbr<l2bL2ll2bLbLnnNpnrrrpLbrpl2bL2n~n|nrBL`2bL2r2nrrLbrl2bL2r2rLr`2bL2ln|r2nLr`2bL2LlnBn~~n|2B~BLrNnn`2bL2LBNLnnn|nn|nr`2BL2nnnrrLbrl2bL2Llnrr|nnnrrLbrl2bL2lNnnb~~nr2BLL2rLnnL|22nnBn|nr`2bL2rLrB2rbp|LL|LLLLLL`2bL2rb2Lln2rnnn`L`2bL2`2BBrBnn2BnLn|~nbnn~Brllpbr2llrl2bL2`2BBrbBnn22BnLn|~nbnnbb2b2bl2bL2@2BBrLBLB2nLL`2bL2`2BBrLBLB2nLL@2bL2LnBnbrBLn2nnp~nLnBnbr`2bL2bBnnp~n2nnnBp~nB|2nnn~Llbn|2BL||2pnbnBn2n2nnnrpBN2br2BnLnnn|||2pnbnBn2n2nnnrL||2pnbnBn2nr2n~||2pnbnBn2nr2n~rbr2prrLrbr|bBp~n|~n2r2bpLp~n|~n22|~nb~nnBnnLbbbpb|~|~nrbBrpbnnnnpnLn`r||~n22nrl2bL2pBnBbr2BnNLnnn|p~nnnn|Br2rnL2bL2B2nnnBnnpLnBL<<LLLpr`2bL2n2prnnrNBnL|2nrBLbn|BbLLprbnN2B2bl2bL2LlnnbprnnrnBnL|2nrBLbn|BpLprbnn2B2bl2bL2Nnprrnn|~BlnL`2bL2`2nnL~~nnrbLnnpbnn2nNnnb~n2rBL`2bL2nnr2~~nBr2`2bL2LnnLnnBn|2rrnnnb~Bnlpn2Lnnnpnbn2Bn`2bL2lpBln|bl|LbpLlnlplb`rplnrLL`2bL2B2rLnnNpbnL|2nrLnnL2r`2bL2B2rLnnnpL2rb`nr`2bL2|2|rbBnn2Brnr2NlLnnnNbnnbl2bL2|L`lL|2r2nnLn|L|2Bn|L`2bL2L`2nnnNB2nnnrrn|lL|2Bn|L`2bL2L`lB2nnnrrn|lL|2Bn|L`2bL2L`2r2nnB2nnnrrn|lL|2Bn|L`2bL2|lpnpnnn|nnBBnnrr|n2Ln|rb<2nrbl2bL2lrrn|l2nn|`2n~Lnnn~L|2rrnplL|2rrnp|L`2bL2lrrn|lBl2nn|`2n~Lnnn~L|2rrNplL|2rrnp|L`2bL2lrrn|2rl2nn|`2n~Lnnn~L|2rrnplL|2rrnp|L`2bL2llBr2bn|B2rBbBnnnpLn|rBL`2BL2l~nLll2nnpBpnBnB2rn2nnpB2`2bL2||rnl2nn|r|B|bBprnnp~nnbnnbl2bL2ppnpnrnBrrb2nrBLnrrn>LnprnrBbLnp2n|Ln|rL2bL2LBrn2bnBBp2LbnB|nnnLLLbLll~bnr2Bbl2bL2ppnpnrnBrLBrn|rp~|BBLnrrnLnprnrBbLnp2n|Ln|rl2bLL2|nppnpnBLpbLLLLll~p|rnnbnnLn|p2rL2LLLn|rl2bL2`~n|~nBp~nnBn2brBLrl2bLL2B2nnnBnr2p~n|~Nn2L2L|2Bnrl2bLL2`nBB2bn2n2nnnb|n2n2bbnpnpnL2nnbnBnpbbB`~~llBnBn~Lbl2bLL22n2BpLNnnnLL`2bL2llrBLnnb2nB2nnn|rp2B2nn`2b2LlnnrprnnrnBnL|2nrBbn|BpLprbnn2B2bl2bL2LLnnnnrprnnrnBnL|2nrBbn|BpLprbnn2B2bl2bLLL2|l2Brnr2nl`2Lnnnnbnnbl2bLL2|L`2nrnnn0p22Lnn|2np2rLn|Lbl2bL2bnBLn2bnnLn2Brnnn|p`2nn|nrLpn|nnnNl2bL2L2l|BbrbnnnnpL2nnBnbl2bL2|rB`2nnbnL|rnnB2`rbbbl2bL22rb2Lln2rnnn`2L`2bLL2`2`~N|rnnB2Bnprrn|LnLl2bLLL2r2b2Lln2rnnn`BL`2bLLLLL2`B`~n|rnnB2Bnprrn|nLl2bL2rb2LLn2rnnn`rL`2bLLL2`r`~n|rnnB2Bnprrn|nLl2bL<2|rB`n`LLnnb`r`2bLL2lr2~NnBnprrn|Lrb|L`2bLL2`BLnN`b|b|2BLLpBL`2bLL2`2BBr2LbpbLpln|`2bLL2`2BBrLbpbLp2ln|`2bLLL2`2BBr``LnN|Bbnn|rl2bLL2`2BBrrL`2BLL2LnBnbrBLn2nn|rnn2nLn2Bnbr`2bLL2Llnn|Bb~LnL2nnBnbpLnrBnnp~2bb|bLLn|~bbLnNpLLnprBn|rpbpr2b|rbL`2bLLL2nBLnnb2nB`2b<L2L|2Bnp2L2pBB2nB|n|`2bLL2L|2Bn|2n|n|`2bL2n|bbnBrnrnBnL|2nrBbn|Bpp2rbnn2B2bl2bLL2nrnBnL|2nrBLbLprnnLllnnrb~nbbBbNn2B2bbl2bLL2Lnnn|bNn~Brpll~lBl2l2lbll22Lll2bLL22rLnn|n2~Bnnnn2lL2`2bL2L2rLnn|n~B2lL2`2bL22nnpBnp~BLnNb2nB2nNpBn|Br2rnl2b2r2lnnB|n|LnNn|L`2bLLL2llbrB22lp2llb~22l~Bn~rnnnn`2bLLL2r2BBnnnpLbbBbB2llnnn~BL~nrLnnnpbnn|rl2bLLL2r2BBnnnpLbbBBB2ll2r2nnn~BL~nrLnnnpbnn|rl2bLL2r2BBnnnpLbBBbB2ll2r2rnnn~BL~nrLnnnpbnn|rL2bLL2L2nLnnb2nB2nnnp2nnr|Br2rBbr2BnbL`2bL2L2nL2n`bLLb|2Lnnb2nBL2nnBn|rLL`2bL2`nn|rBlbrB0`nn~2Bnn|BrL`2BL2pbpL2nn~Bnn|Lnn`2bL2nrprnnN~|prnnnLnnnn|brBrbl2bLLL2LrLnnnp~BLnnB2nrb`L|2nr`2bLLL2lB2nnLl`2lLLLB22nB`2bLL2pn<LbBnpb22nnp~BLn2nnp~L|2Bnrl2bLLL2|rBB22nn2n|rB|~rBbBnBL2rn~bBnBnLbLLbpL>LbB2nn|2Brl2b2|rBB22nn2n|rB|~rBbBnBbBnBnrnLn|LLLLrLrl2bLLL2pnLbr2br2bp~nnnnBBr2nr2LLnnBbr2rnn|2L`2BLL2LnnnBp~N2nn2n|p2rl2bLL2LnNnBr2~n2nnpBLnnnbnnnnr2B|B2npLnn`2bpLL2lr|Br2rnLnnb2nB`2bpLL2LBrn|B|BrBnLnnBr2n2BLB`2bpLL2LBrn|B|brBnLnnBr2nBnB`2BpL2LBrN|B|brBn2br2nBLB`2bp2rp~Bln2lLBbL|brB`2bpL2rp~Bl~BBbL||Lb`~2B2n`<Lrl~~n~bnbbnbnnbL`2bp222ppNpn|n||brB`2bpLL222BBBnnrl2bpL2ppnpnrnBrl2nn~ppnpNrnBrLBrn|rp~|B`2|LLL2r2brrnL~r~2||L`2|L<LL2r2~rprnNrnBnL|2nrBLbn|bLpr2bl2|L2llbr2B2lBn~rnnnn`2|<L2Ll2LnnnrnBnL|2nrBLbn|BLpL<prbnn2B2bl2|LL22nrn2N|2B2nrnNrnBnL|2nrBLbn|BLbLLprbnn2B2bl2|LL2BnbBBnrnBnL|2nrBLbn|Bpprbnn2B2bl2|<22LBnrnNrnBnL|2nrBLLbN|BpLprbnn2B2bl2|22pbnnrnBnL|2nrBLLbn|Bpprbnn2B2bl2|L22lrnBnrp~nBBbrBnrnLLpbnLLbL`2|L2Ll22~rnnNrnBnL|2nrBLbN|BpLprbnn2B2bl2|2L2nrnBnL|2nrBLbn|Bpprbnn2B2bl2|L2Lnp2nnrnBnL|2nrBLbn|Bpprbnn2B2bl2|L2ll2brB2lb22ll`lBn~rnnnn`2|L2l`l2brBnnL|2l2|~rrn2n|n|LNnnbl2|L2l`LbrBL2n|n|Lnnnbl2<|LL2l`lbrB2n|N|Lnnnbl2|LL2l`l2brBbb`bpr2n|n|Lnnnbl2|L2l`lBrBL2bpprrnp`2nnn2n|N|Lnnnbl2|L2@bB`pr2prbpL`2|LL2rnnL2nLp~2Br22nn2nnpr`2|L2rnnL2LllbBlnpB`2|LL2rnnL2ln`LNnLnnb2nB|rrrNn`2|2Llnb2Nr|rnr22B2nn`2|LLL2~BrnnBbnrn2pbLnn|Lprrnn|L`2|<L2l2l2brB2nn`Ln2|rnnBr2rl2|2b2Ln2|rnnB|brB`2|2b2Ln2nr2|brB`2|2n<2nnn2nnl2bnl2n2n2BlbrB2nn|bbl2|2nnbnn2nnl2pbnl2N2nBlbrB2nn|bbl2|2b2Lr2nB2np|brB`2|LL2Lr2nB2npr22BrL|brB`2|L2`pnpnn2lrnB2npbpb2nBBr2nnNbnnB2Bnn|bL`2|LL2Lnn|nnBLnb2p2nn|brB`2|L2Lnn|nnBrB|brB`2|LL2Lnn|nnBp2|brB`2|LL22nnpBNnrnBb2nnllr2n||rL`2|L2nB2nrp|br2B~Lnnbr2Lrbbnn`r`2|2|bnnb2nBB222b2nBBB2nBBLrL22B2Lp2r`2|2|bnnB2nBB222b2nBBB~BnL|pbLNnrpnnnnn~L`2|L2`~n|~nB|2nnn~p~nnB2npbrLrL`2|2|bnNb2nBB222b2nBBB|bnn|brB2L`2|L2lB2nnBpL2nBbLn|rbLll2|`2B2nnL|2Bnrl2|LL2pnLb||<2b||nn|brB`2|LLL2brBnrBBLnN2prrLLnn|bBbpLlB2bl2|L2pLnnnnnrl2|LLLLL2nnnBLnnnnnrl2|LLLL2lnbnLnlr2n|n|pp2rrbLbbl2|LLL2LBrn|B|brBnLNnBr2nBnn`2|L2LBrn|2B|brBnLnnBr2nB|rrr2L`2|L2rnBBr2nnn|LLLbbL<bnn|rpr2bl2|LLL2`~Bln2r|L`2|LLL2l2nnpn~Bp~B2B2n|rl2|L2bnrn|2nnpn~Bp~B2B2n|rl2|L2L2nn`r2Lnn`2|LL2B2nnbr2N|LlnBBL|nnpnnLbbr2Bnrl2|L2LlnbBnprrn|LlnBBL|nnp2nnLbbr2Bnrl2|L2lB2BlblB2p2L`2|L2br2b~rLnN`2|LL2Lll~Bb22r2p~|rprBbBLrLr2Lnn~L`2|L2b22Lrrp2bnnL|2Bn~Brl2<|L2lnnn2nnbrln2n|rBnn|rl2|L2B2nNbrln2n|rbnn|rl2|L2l`blLl|~rn|~nnrL|nn`2|L2LlnBB~`~nnnln2n|rbnnnrrnL|2BnrL2|L2Lll~BLl2l|2prLrL`2|L2rn2BrBB`l`~nnnnB`2|LLL2rn2brBBnL2`pr|brBbLrr2n|prnnpBLL`2|LL2rn2brBBLn|bLnnLnnL`2<|LL2LLnn|nBn|2LL`2|LLLL2LlnNBn|bLbl2|LLL2LBLB2lL2`br~|pLnn~BLppLn2|~rpp2np|LL`2|LL2LBLB2lL2`br|B2nnBLlp2|~rplB2nnlnpBLL`2|LL2LBLB22|~r`l`~nnNnB`2|LL2LBLB2LlnrBBln|Lbrr|2nnrn2np`2<|LL2LBLB2lB2NnlnpBB2brB`2|LL2nBLLbbL2@nB~|rl2|LLL2nBLLbbLn|rrL2|LLL2LBrn|B|2brBnLnnBr2nBLr`2<|L2LBrn|B|brBnLnn2Br2nBLBb|n|@2|LLL2LnnrBl~Lnnrbrp~nnn~BLnnLnrrl2|LLL2|npbBlrbbnln|`~nnnnBLlnBr2nB`2|LLL2|npbB`~2B2n``pbBl|nnl2<|LL2|npbbnnll@bnn|rLnl2nBnn`2|LLL2N|lL|2nBb`bbbB2nb~r2nn`2|LLLL2LBrn|B|brBnLnn2Br2nBLBnrl2|LLL2LBnL2`lp~B2nB@2|L2nnBL|2Bnb`LBnp~B2nBbbb<2bp~|BrL2nnBn`2<|LLL2llbrB022rrlBn~rnnnN`2|LL2b2|r2|rnnB|brB`2|LLL2|brBrrn|2Br2nnnLL`2|LLL2lnbnp~n2nnrLnn2brLpBbbr22r`2|LL2nnbnnB~BlnnnNl2|L2b2brB2|brB`2|<LLL2b2rB2rBnbr2nnnn|brB`2|2Lln0LnLn|Lnnnn|LnnnBLLLL`2|L2LBrnLLBLb|B2nn>prn~BrnBnnL|2Bnrl2|<L2BLb|B2nn22l2LLL2llrLbB2LLLbpr2pLLbLn|L2lLL|L`2|2|B2nn|B2nn2n|22l2|brB`2|L2pnLbb2BBLLb|B2Nn>`Ln|nnnLnr~B|2prl2|<L2B2NnnBnr2p~n|~nnr2L2br2Bnrl2|LLL2BLLb|B2nn2r2LLl2llrLLbB2Lbpr2pLLLbLn|LLLL`2|L2B2nnnBnr2p~n|~NNr2L2L|2Bnrl2|LL2LBLLbpnn`B|L2`brnnpBL2nnrn`2|LL2pn<LbpnLb`nn`ln~bnB`2|<2LlnLNLn|Lnnnn|LnnnBLLLLL`2<|L2pnLbnBpnLbnBB`nn`lnB~n2nn|2nB`2|LL2LBLLbplL2`br~|pLnn~BpLn2|~rLpp2npp|pL`2|L2Lnrbpnrbnp|BBLnr2BBLnr2BBL`2|LLL2LBLLbplL2`br|B2nnBLlb2|~rblB2nnlnpBL`2|L2Lnrbpnrbnp|BBr2p`2nnnLnnnprl2|L2nBLLbpLbL2`nB~|rl2|LL2nprnrl2|LL2nBLLbpLbn|rrrl2|<2nprnlbrl2|L2LBLLbp|LNn`b|L2`brNnpBL2nnrn`2L|LL2|nn|bpn<BbnpnnLbr2L|2BnbLLbL2L|L222nn~BnpBrn~B|nnnLnnbbbl2L|LLLLL2Lnr2nn`|l2llpBLLBrLL`2L|LL2LBLLbp|LlL2`br~|pLnn~BpLn2|~rLpp2npp|pL`2L|LL2LBLLbp|LlL2`br|B2nnBLlb2|~rblB2nnlnp2BL`2L|LL2nBLLbp|LbL2@nB~|rl2L|2nBLLbp|Lbn|rrrl2L|LL2rn2nnprn2rnnrLrl2|L2LBLLbp|Lbpnn`b|L2`brnnpBL2nnrn`2|L2LBLLbp|LbplL2`br~|pLnn~BpLn2|~rbp2np|L`2|L2LBLLbp|LbplL2`br|B2nnBLlb2|~rblB2nnlnpBL`2|L2nnLLbp|LbpLbbnnnn2brbbnnB2nB2bLnnLB2nnL`2|2nnLLbp|LbpLbbnnnn2brbbnNb2nB2b2lnrBbLLL22nBnr2npnp`2nll2bB2lllLrl2|L2nnLLbp|LbpLbLnp~nbB2nn~Bnbr2nnnrLnn`2Lbp2nnLLbp|LbpLbLnlnrLn|LLbLrbnnLbpnp~Nnn|b`2Lb2lnbn`r2|2rBblbrl2LbLL2Llnnnb~`r2Ln|NLbbbppLnLBrLn|Lbbbprl2LbLL2Llnnnb`~nnBL`2LbLLL2brLnbnBpLBpBpLpLn2BLbbbppLnrrn~LbL|L|bL|L|L|Lrl2LbL2nn|Lbbbpp~n2nn~pnrB~n2nn~`nnn2Bl2Lb2p~nBLbbbpp|~nBLbbbpp|~n2`L`2LbLL2nnrBLLbbbprl2LbL2pprnbr2BnnL|ppnpnr`2Lb<2Bnbr2BnnL|nB~n2nn|rl2LbLL2p`rnLrrr~B|2nnbn2nnLb<pLn|n|bnrl2LbLLL2r2LLnn|~nBnbnr2rnlnn2brLbl2LbL2nBLnnnrl2LbL22nnL|rBnnLnnn|Bbrl2Lb2lnb|2nnbnLrLnNBnprr`2LbLLL2|rnp2>lrnbnL2np~bnrnNnbBbnBb|rn~bnr2Np~ppnpnB<LbpLbLrrl2LLbpLLL2llbrB2lBn~rnnnn`2LLbp2lr|l~2nnb`Ll2L`2LLbpL2Llnn2nllbllLb`Ll2L`2LLbLL2|rnp2|rn|LrLB22|nnnLnn|rnLnnBl2lll22Bllblb22rrlrrl2rB2Lb|2ll~Ll2lrllbb2ll2bll<2l~Bb|BLb|b2nllp2l`B222p2l`B2222lbll2p2l`brb`B2L2pbb2ll`~2B2B2pB22n2lBl222L~BbLbbrllllLbr2r2blp2l`B``2l2bl2LLbL2|rnp22rLBrnrBLBnbl2LLbLLL2|rnp2ln|nn|~2nrnbl2L|LLL2|r2np2pr|2r2npbB`2llrnnnrnnL|2BnLnn`rBnnb`2llrnn|n|bl2L|L2|rnp2L2nnnB2Bn~Bnn`ln~bnBpBr2nnnbbrb~n~L`2L|LLLLL2|r2np2n~|nnnB`LnB2BbnnnLLnnbl2L|L2~2nnB2~BBnnbpL2~2n|rnnr~nLnrnLnnn|b|rB2bbnNLn|Ll`pLn|n|bn|L`2LBL2|rnp2L|2Br~B~BpB2nr2nbB|L`2LbLL2|rnp2`|p2np|rnNb|p2npLblp2npb|rnB2bl2LbL2|r2np2`2|p2np|r2nnrnBnpb|p2npLblp2npb|rnbnBnpbl2LbLL2|rnp2`|p2np|rnn2n2B2Bpnnb|p2npLblp2npb|rnb|2nnbnnnbl2LbrLLL2|rnp2`|p2np|rnN2nn2Bb|p2npLblp2npb|rnb|B2nnnbl2LbrL2|rnp2`|p2np|rnn2rn2BB2n2Bb|p2npLblp2npb|rnb|rnr~2nnbl2LbrL2|rnp2`|p2npLb|p2npLBLLnlrr2nnnlp2npbl2LbrLL<L2|rnp2l2B|rnrLrrnn2rr~Brp~n|~nb2`Lbbr2nrr~Bl2r~`~n|~nbB~B2nbl2LbrL2|rnp2l2B2|rnrLrrnn2rr~Brnnb2`Lb~BBrr~Bl2r~nnbB~B2nbl2LbL2|rnp2lLLnnnBnpr|rbbpBnr2n|bnnnLbLBB2n2B2L2Bnbn~BnbnlrnLnnnnn|L`2LbL2|rnp2Lbnbrr2r2bBrLbb~2r2bbbl2LbL2|rnp2LBnbrr~2nbbrLbb~~2nbbbl2LbL2|rnp2l22rnB2`rbBLb`L|2nbl2LbLL2|rnp2l2rnB|p2nprbBLblp2npL|2nbl2LbL2|rnp2lrnnnn|rnrprb|~rrnLb`|b2nL|rB2bnnbrB2bnnbl2LbLL2|rnp2lrnnnn|rnrLnnpb|~rrnLbLNnp`~n2bB2nnln|L`2LbLLL2|rnp2lrnnnn|rnrr~nnrL2n||~rrnLbb~nnL2nl~rrn|L`2LbL2|rnp2lrnNnn|rnrr~nnrrnn||~rrnLbb~nnl~rrnbb~nnbBl2LbL2|rNp2lrnnnn|rnrr~nn||~rrnLbb~nnl~rrnbl2LBL2|rnp2lrNnnn|rNrnn|n||~rrnLbln|nlBbrlp2nnrl~rrn|L@2Lb2|rnp2|rnrrBn||~rrnLB`2Ll2rr||n2nbL|np~nbbnnp`rN`~nbBnnlr2nLn2rbrn`2LbLL2|rnp2|rnrrBnnpNb|~rrnLbLlrn`2Nnr2|n2nBL|np~nbbnnp`rn`~Nbbnnlr2nLn2rbrN`2LbL2|rnp2lrnnnn|rnrLrp~nnnb|~rrnLbL`~nnnl~rrn|L`2LbL<L2|rnp2lrnNnn|rnrLrrBnnB|~rrnLbLbBnnl~rrn|L`2Lb|L2|rnp22rn2rbnnLblrbnlrn|n2nbL|np~nbBnnp`rn`~Nbbnn`2N|rb|rbrBNnbnbn2r`2Lb|L2|rnp2LLnnbnrLNbnnLBllb2Llrr2Lbnlrnbbbl2Lb|LLL2|rnp2LLnnbn|nnpnpnbnnLbLr2lnpnrbB~B2b|nbnnpnbbbl2Lb|L2|rnp2Llnnbn|rbrBnnnbnnLbbBnnBbNLrnbbbl2LLbLL2|rnp2Llnnbn|rbrBnnnB2r2nn|LnnnLbbBnn2rbnlrnbbbl2LLb2|rnp2>l2Bbnr2BnBr|b|BbrLbl`p~n|~Nr2BnBn2n|bbl2LLbLLL2|rnp2l2Bbnrrnr|2brbnnrb|BbrLb`lrnl2brbrLnrbbbl2LLbpLLL2|r2np2l2BBnLnnBnprnnbrb|BBrLblnbBnnLlnnp~nbrbbbl2LLbp2|rnp2l2BbnLnnBnpnb|BbrLblnbBnnLlnnnbbbl2LLbLL2|rNp2l2BbnLnnBnp2n2r~B||BbrLblnbBnnLlnnL2n2r~B|bbl2LLb2|rnp2l2BbNLnnBnpr||BbrLblnbBnnLLnnr|bBl2LLbL2|rnp2nnnN~bppnb|BbrLbl|bnp~nbB2bnn~Bppn|n2nbL|np~nbbnnp`rn`~nbbnnbn2l|2BnbrBbpbnbnbrp`2LLbL2|rnp2l2Bbnn2BNrb|BbrLbn2Bnrbbbl2LLbLL2|rnp2|rnrnBnbppBb|BbrLb`pBl2nlBNln|LLn~|n2nbL|np~nbbnnp`rn`~nbbnn`2n|rb|rbbBnB~L2nbbBrblBnlnpbnnnpBbprrLr0LL`2LLbL2|rnp2l2Bbn|rnrr~nn||BbrLbb~nnlBbr|bbl2LLb2|rnp2l2Bbn|rNrLnnnrbnn||BbrLbLnbBnnLlNnrbbbl2LLbrLLL2|rNp2l2BbN|rnrnn|nbnB2~Bb|BbrLbnB2ln|nL|2nnbBnn`~n2nlnbbbl2LLbrL2|rnp2|rnrrBnrnnb|2BbrLb`2LlrnnLlLl2rr||n2nbL|np~nbbnnp`rn`~nbbnnLr2nLn2rbrn`2LLbLL2|rnp2L2Bbn|rnr|nnnrb|BbrLBlnnnl~nLnbBnnbnlrn||Bbl2LLbLL2|rnp2|rnrnr|b2Bnb|2BbrLbLBNlbl|n2nbL|np~nbbNnp`rn`~nbbnnlr2nLn2rbrn@2LLbLL2|rnp2l2Bbn|rnrLbnnrp|B2n|||BbrLblnLlnrn`0|b2n||bbl2LLb2|rnp2l2Bbn|rnrLb2nb|BbrLb`~nnLnnL2brbbbl2LLbLL2|rnp2LlnnrLnbnnLbllb2Llrr2Lbnlrnbl2LLbLL2rLnnbBr2nnN|Lbl2LLbL2|rnp2Llnn|nnpnpnbnnLblr2lnpnrbB~B2b|nbnnpnbl2LLbL2|rnp2LlNn|rbrBnnnbnnLbbBnnBbnlrnbl2LLb|L2|rnp2Llnn|rbrBnnNB2r2nn|LnnnLbbBnn2rbnlrnBl2bLLL2|rnp2bnrnrrnr|2brbnnrb|BbrLb`lrnl2brBrlnrbl2bLL2~2n>LBr~2nL`2bLL2|rnp2LnnBnprnnbrb|Bbr2rb|rrrnNbl2bLL2|rnp2bnrnLnnBnprnnbrb|BbrLblnbBnnLlnnp~nBrbl2BLLLL2|rnp2LnnBNpnb|Bbr2rb|rrrnNbl2bpLL2|rnp2>bnrnLnnBnpnB|BbrLblnBBnnLlnnnbl2bpLL2|rnp2LnnBnp<2n2r~B||Bbr2rb|rrrnnbl2bpLL2|rnp2bnrnLnnBnp22n2r~B||BbrLblnBBnnLlnnL2n2r~B|L`2bpLL2|rnp2LnnBnp2r||Bbr2rb|rrrnnbl2bpL2|rnp2bnrnLnnBnpr||BbrLblnbBnnLlnnr|L`2bpL2|rnrr~nnp2`~nnrbnL2nLnrr2rLN|L|2Bn|L`2bLLL2L2nLLL2n`LL|Lb2nLLbLbLL|rLLLn|nLnnBnprp~n2rnL~LBbnBb|rn~|rnNn|nnLBBnnn~|r|rrrrl2bLL2|rnp2bnrn|rnrLnnnrbnn||BbrLblnbBnnLlnnrbl2bLL2L2nLLL2n`LL|Lb2nLLbLbLL|rLLLn|nLnnBnprp~n2rnL~LBbnBb|rn~|rnnn|nnLB2Bnnn~|r|rrrrl2bL2L2nLLL2N`LL|b2nLLbLbLL|rLLLN|n|rnrLnnnrbnnp~n2rnL~LBbnBb|rn~|rnnn|nnLBBNnn~|r|rrrrl2bL2|rnp2bnrn|rnrnn|nbnB2~Bb|BbrLb2nB2ln|nL|2nnbBnn`~n2nlnbl2bL2L2nLLL2n`LL|Lb2nLLbLbLL|rLLLn|N|r2nrnn|nb2nB2~Bp~n2rnL0~LBbnBb|rn~|rnnn|nnLBBnnn~|r|rrrrl2bLL2|r2np2LlnnBn|rbbrrp~nnrbnn||LnnnLbl2@~nnnbnLrnbbbl2bLL2|rBB22nnnB|~rBnBB|np|2bl|bn~<rbrl2BLLL2|rBB22nnnB|~rBn2BB|np|22bl|bn~2bnr2nl2bL2|rnp2Llnnbn|rbrBnnnnnb|LnnnLbbBnn`~nbB2bnnbnlrnbbbL2brL2|rnp2>l2Bbn|rnr|rrpb|BbrLbLnbBnnB2nBnrbbbl2brL2|rnp2l2Bbn|rnrrbnrb|b2rLBnb|BBrLb`l2brbrlnrLnnb2rpnBbbl2br2|rnp2l2B|rnrr~Nn||BbrLBb~nnlBbr|L`2bLL2L2nLLL2n`LL|bBnbnBBnnLL|2nrnn2|brBp`22nn2nLp~n|BL`2bLL2L2nLLL2n@LL|b2nLLbLbLL|rLLLn|>n|rnrr~nnp~n2rnL~LBbnBb|rn~|rnnn|nNLBBnnn~|r|rrrrl2BL2L2nLLL2n`LL|Lb2nLLbLbL<L|rLLLn|nr2BnBr|p~n2rnL~LBbnBb|rn~|rnnn|nnLBBnnn~|r|rrrrl2b2L2nLLL2n`LL|Lb2nLLbLbLL|rLLLn|n|rNr|nnnrp~n2rnL~LBbnBb|r2n~|rnnn|nnL0BBnnn~|r|rrrrl2bLL2L2nLLL02n`LL|LLb2NLLbLbLL|rLLLn|nN2Bnrp~n2rnL~LBbnBb|rn~|rnnn|nnLBBnnn~|r|rrrrl2b2L02nLLL2N`LL|LLLb2nLLbLbLL|rL<LLn|n|rnrLbnnrp|b2n|p~n2rnL~LBbnBb|rn~|rnnn|nnLBBnnn~|r|rrrrl2b2nrnnnrnnpL|B~nrL`nr2n@rNn`rnnr2n`rnn`rnrrl2nn|~lNL2nrN2r2L`rlr2Ll2LBrLn|LbbbppBLBrBBp`rl2nrnnnbn
