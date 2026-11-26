@@ -1,0 +1,17 @@
+--- a/board/raspberrypi/rpi/rpi.c
++++ b/board/raspberrypi/rpi/rpi.c
+@@ -398,6 +398,14 @@
+  */
+ static void set_fdt_addr(void)
+ {
++	/*
++	 * Hand the OS the firmware-built DT (overlays, cmdline, memory split applied)
++	 * even when U-Boot runs from its own control DT (OF_SEPARATE).
++	 */
++	if (fdt_magic(fw_dtb_pointer) == FDT_MAGIC) {
++		env_set_hex("fdt_addr", fw_dtb_pointer);
++		return;
++	}
+ 	env_set_hex("fdt_addr", (ulong)gd->fdt_blob);
+ }
+ 
